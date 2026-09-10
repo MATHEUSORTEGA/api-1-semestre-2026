@@ -2,10 +2,13 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 from bot.telegram_bot import iniciar_bot
+from config import verificacao_ambiente
+
+# Verifica se os módulos estão baixados corretamente
+verificacao_ambiente()
 
 # 1. Define o caminho dinâmico para o arquivo .env
-# ATENÇÃO Criar .env dentro da pasta src
-
+# ATENÇÃO Criar .env dentro da pasta src 
 current_dir = Path(__file__).resolve()
 env_path = current_dir.parent / '.env'
 
