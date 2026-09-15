@@ -29,8 +29,8 @@ def verificar_modulo(nome_modulo, nome_pacote_pip=None):
 def verificacao_ambiente():
     print("====[config.py]=============================== ")
     print("🔍 Iniciando verificação do ambiente... \n")
-    verificar_modulo("telebot", "pyTelegramBotAPI")
+    verificar_modulo("telebot")
     verificar_modulo("dspy")
-    verificar_modulo("dotenv", "python-dotenv")
+    verificar_modulo("dotenv")
     
     print("\n[Config] Todos os módulos validados. Ambiente pronto! 🚀\n")
