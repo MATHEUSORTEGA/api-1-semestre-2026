@@ -1,4 +1,5 @@
 import telebot
+from ia.config import processar_mensagem
 
 def iniciar_bot(bot_key):
     bot = telebot.TeleBot(bot_key)
@@ -10,7 +11,8 @@ def iniciar_bot(bot_key):
     
     @bot.message_handler(content_types=['text'])
     def receber_texto(message):
-        bot.reply_to(message, "Olá mundo!")
+        resposta = processar_mensagem(message.text)
+        bot.reply_to(message, str(resposta))
     
     @bot.message_handler(content_types=tipos_nao_suportados)
     def receber_formatos_invalidos(message):
