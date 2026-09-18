@@ -16,6 +16,6 @@ def buscar_por_data(data):
 
 def produtos_mais_vendidos(limite):
     if limite <= 0:
-        return None
+        return None 
     else:
         return tabela.groupby("Produto")["Qtd"].sum().sort_values(ascending=False).head(limite)
