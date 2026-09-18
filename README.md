@@ -61,21 +61,20 @@ O diferencial da solução é a fricção zero com o usuário. A plataforma atua
 ---
 
 ## 📋 Backlog do Produto <a id="backlog"></a>
-
-| Rank | Prioridade | User Story | Story Points | Sprint | Requisito do Cliente | Status |
-| :--: | :--------: | :--- | :----------: | :----: | :------------------: | :----: |
-|   **1**  |    **Alta**    | Eu, como líder, quero saber quais produtos precisam ser produzidos, a fim de reduzir o desperdício de tempo e produto. |      -*-*-       |    1   |          ---         |    ❌   |
-|   **2**  |    **Alta**    | Eu, como líder, quero saber quantos produtos precisam ser produzidos, a fim de reduzir o desperdício de tempo e produto. |      -*-*-       |    1   |        ---       |    ❌   |
-|   **3**  |    **Média**   | Eu, como gerente, quero saber o que foi produzido no dia X pelo setor Y, a fim de verificar a produtividade do setor Y. |      -*-*-       |    1   |          ---         |    ❌   |
-|   **4**  |    **Média**   | Eu, como gerente, quero saber o que deveria ter sido produzido no dia X pelo setor Y, a fim de comparar a meta com a produção real e identificar gargalos. |      -*-*-       |    1   |          ---         |    ❌   |
-|   **5**  |    **Média**   | Eu, como líder, quero saber quais produtos me trazem mais lucro, a fim de otimizar o tempo dos colaboradores. |      -*-*-       |    2   |          ---         |    ❌   |
-|   **6**  |    **Média**   | Eu, como líder, quero saber quantos reais foram descartados, a fim de monitorar o impacto financeiro das perdas do meu setor. |      -*-*-       |    2   |          ---         |    ❌   |
-|   **7**  |    **Média**   | Eu, como gerente, quero saber quantos reais foram descartados, a fim de avaliar o custo global de desperdício da empresa. |      -*-*-       |    2  |          ---         |    ❌   |
-|   **8**  |    ****Baixa****   | Eu, como gerente, quero saber quais produtos me trazem mais lucro, a fim de orientar estrategicamente os setores. |      -*-*-       |    2   |          ---         |    ❌   |
-|  **9**  |    ****Baixa****   | Eu, como gestor, quero interagir com o assistente de análise de dados enviando perguntas por áudio, a fim de obter insights das planilhas de forma fluida e sem contato manual (semelhante a uma Alexa). |      -*-*-       |    3   |          ---         |    ❌   |
-|   **10**  |    ****Baixa****   | Eu, como líder, quero saber quanta matéria-prima eu preciso deixar preparada para o dia seguinte, a fim de otimizar o tempo e reduzir o desperdício de matéria-prima. |      -*-*-       |    3   |          ---         |    ❌   |
-|  **11**  |    ****Baixa****   | Eu, como líder, quero saber quais matérias-primas estão disponíveis para transferir a outros setores, a fim de reaproveitar recursos parados e evitar compras desnecessárias. |      -*-*-       |    3   |          ---         |    ❌   |
-|  **12**  |    ****Baixa****   | Eu, como gerente, quero saber por que o produto X está sendo transferido de setor, a fim de identificar falhas no planejamento original da produção. |      -*-*-       |    3   |          ---         |    ❌   |
+| Rank | Prioridade | User Story | Story Points | Sprint | Status |
+| :--: | :--------: | :--- | :----------: | :----: | :----: |
+|   **1**  |    **Alta**    | Eu, como líder, quero saber quais produtos precisam ser produzidos, a fim de reduzir o desperdício de tempo e produto. |      -*-*-       |    1   |    ❌   |
+|   **2**  |    **Alta**    | Eu, como líder, quero saber quantos produtos precisam ser produzidos, a fim de reduzir o desperdício de tempo e produto. |      -*-*-       |    1   |    ❌   |
+|   **3**  |    **Média**   | Eu, como gerente, quero saber o que foi produzido no dia X pelo setor Y, a fim de verificar a produtividade do setor Y. |      -*-*-       |    1   |    ❌   |
+|   **4**  |    **Média**   | Eu, como gerente, quero saber o que deveria ter sido produzido no dia X pelo setor Y, a fim de comparar a meta com a produção real e identificar gargalos. |      -*-*-       |    1   |    ❌   |
+|   **5**  |    **Média**   | Eu, como líder, quero saber quais produtos me trazem mais lucro, a fim de otimizar o tempo dos colaboradores. |      -*-*-       |    2   |    ❌   |
+|   **6**  |    **Média**   | Eu, como líder, quero saber quantos reais foram descartados, a fim de monitorar o impacto financeiro das perdas do meu setor. |      -*-*-       |    2   |    ❌   |
+|   **7**  |    **Média**   | Eu, como gerente, quero saber quantos reais foram descartados, a fim de avaliar o custo global de desperdício da empresa. |      -*-*-       |    2  |    ❌   |
+|   **8**  |    **Baixa**   | Eu, como gerente, quero saber quais produtos me trazem mais lucro, a fim de orientar estrategicamente os setores. |      -*-*-       |    2   |    ❌   |
+|  **9**  |    **Baixa**   | Eu, como gestor, quero interagir com o assistente de análise de dados enviando perguntas por áudio, a fim de obter insights das planilhas de forma fluida e sem contato manual (semelhante a uma Alexa). |      -*-*-       |    3   |    ❌   |
+|   **10**  |    **Baixa**   | Eu, como líder, quero saber quanta matéria-prima eu preciso deixar preparada para o dia seguinte, a fim de otimizar o tempo e reduzir o desperdício de matéria-prima. |      -*-*-       |    3   |    ❌   |
+|  **11**  |    **Baixa**   | Eu, como líder, quero saber quais matérias-primas estão disponíveis para transferir a outros setores, a fim de reaproveitar recursos parados e evitar compras desnecessárias. |      -*-*-       |    3   |    ❌   |
+|  **12**  |    **Baixa**   | Eu, como gerente, quero saber por que o produto X está sendo transferido de setor, a fim de identificar falhas no planejamento original da produção. |      -*-*-       |    3   |    ❌   |
 
 ---
 
@@ -110,6 +109,7 @@ O diferencial da solução é a fricção zero com o usuário. A plataforma atua
 
 <h4 align="center">
  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"></a>
+ <a href="htpps://www.telegram.org/"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></a>
  <a href="https://www.atlassian.com/software/jira"><img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white"/></a>
  <a href="https://miro.com/"><img src="https://img.shields.io/badge/Miro-1A1A1A?style=for-the-badge&logo=miro&logoColor=white"/></a>
  <a href="https://github.com/"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/></a>
@@ -180,7 +180,7 @@ O diferencial da solução é a fricção zero com o usuário. A plataforma atua
       <td align="center">
         <a href="https://github.com/leandrotc013-lab">
           <img src="https://github.com/leandrotc013-lab.png" width="100px;" style="border-radius: 50%;" alt="Foto do Leandro"/><br>
-          <sub><b>Leandro</b></sub>
+          <sub><b>Leandro Silva</b></sub>
         </a><br>
         Dev Team
       </td>
