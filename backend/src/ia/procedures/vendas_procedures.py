@@ -1,4 +1,3 @@
-
 from pathlib import Path
 import pandas as pd
 path1 = Path(__file__).resolve().parents[3] / "dados" / "vendas_supermercado_agosto_2026.csv"
