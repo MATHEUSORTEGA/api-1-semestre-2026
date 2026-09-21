@@ -1,8 +1,8 @@
 from pathlib import Path
 import pandas as pd
 
-prod_tb = pd.read_csv('../dados/produtos_mercado.csv', sep=';')
 path = Path(__file__).resolve().parents[3] / "dados" / "produtos_mercado.csv"
+prod_tb = pd.read_csv(path, sep=';')
 
 def listar():
     produtos = prod_tb['Produto'].unique().tolist()
