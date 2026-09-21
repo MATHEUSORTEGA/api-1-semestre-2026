@@ -19,3 +19,6 @@ def produtos_mais_vendidos(limite):
         return None
     else:
         return tabela.groupby("Produto")["Qtd"].sum().sort_values(ascending=False).head(limite) 
+
+def todas_as_vendas():
+    return tabela
