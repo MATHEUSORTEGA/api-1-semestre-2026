@@ -1,5 +1,6 @@
 import telebot
-from ia.config import processar_mensagem
+from telebot.apihelper import ApiTelegramException
+from ia.message import processar_mensagem
 
 def iniciar_bot(bot_key):
     bot = telebot.TeleBot(bot_key)
@@ -11,8 +12,20 @@ def iniciar_bot(bot_key):
     
     @bot.message_handler(content_types=['text'])
     def receber_texto(message):
-        resposta = processar_mensagem(message.text)
-        bot.reply_to(message, str(resposta))
+        print(f"[DEBUG] Mensagem recebida: {message.text}")
+
+        msg_temp = bot.reply_to(message, "⏳ <b><i>Processando sua solicitação...</i></b>", parse_mode='HTML')
+        bot.send_chat_action(message.chat.id, 'typing')
+
+        resposta_bruta = str(processar_mensagem(message.text))
+        resposta = resposta_bruta.replace('```html', '').replace('```', '').replace('[[ ## completed ]]', '').strip()
+
+        print(f"[DEBUG] Resposta processada: {resposta}")
+        bot.edit_message_text(
+            chat_id=message.chat.id,
+            message_id=msg_temp.message_id,
+            text=resposta
+        )
     
     @bot.message_handler(content_types=tipos_nao_suportados)
     def receber_formatos_invalidos(message):
