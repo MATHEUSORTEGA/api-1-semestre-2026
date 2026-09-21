@@ -10,6 +10,6 @@ def dspy_tool(func):
 # O Python precisa ler esses arquivos uma única vez para ativar os decoradores.
 # Sempre que criar um arquivo novo (ex: vendas.py), adicione um import genérico aqui:
 
-import ia.tools.produtos
+import ia.tools.produtos_tools
 # import ia.tools.vendas
 # import ia.tools.descartes

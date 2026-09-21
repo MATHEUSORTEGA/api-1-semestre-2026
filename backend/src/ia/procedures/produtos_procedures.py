@@ -1,11 +1,26 @@
-# procedures.vendas.buscar_por_nome_produto()
 import pandas as pd
 
-def buscar_por_nome_produto(nome_produto: str):
-    """Busca um produto pelo nome."""
-    df = pd.read_csv('../dados/produtos.csv')
+prod_tb = pd.read_csv('../dados/produtos_mercado.csv', sep=';')
 
-    resultado = df[df['nome'].str.contains(nome_produto, case=False, na=False)]
+def listar():
+    produtos = prod_tb['Produto'].unique().tolist()
+    print(f'[DEBUG] Produtos disponíveis: \n{produtos}')  
+    return produtos
 
+def listar_detalhado() -> str:
+    return prod_tb.to_string(index=False)
+
+def buscar_por_nome(nome_produto: str):
+    resultado = prod_tb[prod_tb['Produto'].str.contains(nome_produto, case=False, na=False)]
+    print(f'[DEBUG] Resultado da busca por nome do produto: {resultado}')
     return resultado.to_dict(orient='records')
-    
+
+def buscar_por_setor(setor: str):
+    resultado = prod_tb[prod_tb['Setor'].str.contains(setor, case=False, na=False)]
+    print(f'[DEBUG] Resultado da busca por setor: {resultado}')
+    return resultado.to_dict(orient='records')
+
+def buscar_por_tempo(tempo: str):
+    resultado = prod_tb[prod_tb['Tempo de preparo'].str.contains(tempo, case=False, na=False)]
+    print(f'[DEBUG] Resultado da busca por tempo de preparo: {resultado}')
+    return resultado.to_dict(orient='records')
